@@ -1,14 +1,17 @@
 public class javaTest{
+	
+    void addMethod(int a, int b){
+       int c = a + b;
+       System.out.println("Result of A and B is ::: "+c);
+     }
+
+    void subMethod(int a, int b){
+	    int d = a-b;
+    }
+
 	public static void main(String args[]){
-
-		int a =10;
-		int b =10;
-
-		void add(int a, int b){
-			this.a = a;
-			this.b = b;
-			int c = a + b;
-			System.out.println("Result of A and B is ::: "+c);
-		}
+		javaTest test = new javaTest();
+		test.addMethod(10,20);
+		test.subMethod(20-5);
 	}
 }
